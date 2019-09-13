@@ -1,0 +1,49 @@
+/*IMPORTANT*/
+html{
+  overflow: hidden;
+  padding:0!important;
+  margin:0 !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+body{
+  width: 100%; overflow: hidden;
+  padding:0!important;
+  margin:0 !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*CONTAINERS*/
+.html-wrapper{
+  background: whitesmoke;
+}
+
+.body-wrapper{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px; left: 0px; bottom: 0px; right: 0px;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*ITEMS*/
+.app-txt{
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*TOOLS*/
+.align-tool{
+  flex: 1 1 auto;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*MEDIA QUERY*/
+@media only screen and (min-width: 640px) and (max-width: 3840px){ /*Supported*/
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 639px){ /*Unsupported*/
+
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
