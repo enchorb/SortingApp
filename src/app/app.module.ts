@@ -12,6 +12,7 @@ import {SharedModule} from './modules/shared/shared.module';
 import { AppComponent } from './app.component';
 
 // Services
+import { SortService } from './services/sort.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     SharedModule
   ],
-  providers: [],
+  providers: [SortService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

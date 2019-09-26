@@ -1,0 +1,56 @@
+/*CONTAINERS*/
+.form-wrapper{
+  width: 100%; height: max-content;
+  display: flex; flex-direction: row; margin-top: 1%;
+}
+
+.form-container{
+  display: flex; flex-direction: column;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*ITEMS*/
+.array-input{
+  width: 75vw;
+  align-self: center;
+}
+
+.sort-input{
+  width: 25vw;
+  align-self: center;
+}
+
+.submit-btn{
+  margin-top: 2%;
+  align-self: center;
+}
+
+.sort-progress{
+  margin-top: 0.1%;
+  align-self: center;
+}
+
+.progress-display{
+  display: none;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*MEDIA QUERY*/
+@media only screen and (min-width: 240px) and (max-width: 3840px){ /*Supported*/
+  .submit-btn{
+    width: 45%;
+  }
+
+  .sort-progress{
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 239px){ /*Unsupported*/
+  .submit-btn{
+    width: 75%;
+  }
+
+  .sort-progress{
+    width: 75%;
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/

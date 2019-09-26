@@ -1,0 +1,23 @@
+<div class="form-wrapper">
+  <span class="align-tool"></span>
+    <form [formGroup]="sortForm" class="form-container">
+      <mat-form-field appearance="outline" class="array-input">
+        <mat-label>Input:</mat-label>
+        <input matInput
+               type="text" name="text" autocomplete="off"
+               placeholder="Enter Comma-Separated Data To Be Sorted"
+               formControlName="array"
+               [(ngModel)]="sortString"
+        >
+      </mat-form-field>
+      <mat-form-field class="sort-input">
+        <mat-label>Sort Type</mat-label>
+        <mat-select placeholder="Choose A Sorting Algorithm" formControlName="sort" [(value)]="selected">
+          <mat-option *ngFor="let option of options" value="{{option.id}}">{{option.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="submit-btn" (click)="onSubmit()" [disabled]="!this.sortForm.valid || this.isRunning">SUBMIT</button>
+      <mat-progress-bar class="sort-progress" color="accent" mode="determinate" [value]="progressValue" [ngClass]="{'progress-display' : (progressValue <= 0)}"></mat-progress-bar>
+    </form>
+  <span class="align-tool"></span>
+</div>

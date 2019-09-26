@@ -1,0 +1,21 @@
+<div class="display-wrapper">
+  <span class="align-tool"></span>
+  <div class="display-container">
+    <ng-container *ngFor="let sortNum of sortList; index as i; let last = last;">
+      <div [ngStyle]="{
+      'height' : ((100/sortList.length).toString() + '%'),
+      'width' : (((100/sortMax)*(sortNum)).toString() + '%')
+      }">
+        <div class="sort-bar" [ngClass]="{'sort-bar-last' : last}" [ngStyle]="{
+        'background-color' : 'hsl('+(((sortMax-sortNum)/(sortMax-sortMin))*180).toString()+',100%, 62%)',
+        'border-color' : 'hsl('+(((sortMax-sortNum)/(sortMax-sortMin))*180).toString()+',100%, 62%)'
+        }">
+          <span class="align-tool"></span>
+          {{sortNum}}
+          <span class="align-tool"></span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <span class="align-tool"></span>
+</div>

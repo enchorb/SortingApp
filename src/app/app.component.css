@@ -6,5 +6,20 @@
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*ITEMS*/
+.app-title{
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
 
+.app-form{
+  position: relative; top: 0; bottom: 0;
+  width: 100vw; height: max-content;
+ }
+
+.app-display{
+  position: relative; top: 0; bottom: 0;
+  width: 100vw; height: 35vh;
+}
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
